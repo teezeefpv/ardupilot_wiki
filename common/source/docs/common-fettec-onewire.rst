@@ -25,7 +25,7 @@ Connecting
 ==========
 
 The protocol supports up-to 25 ESCs, but the ArduPilot implementation of it limits this to 12.
-You can connect all ESCs to a single serial port using only a single signal wire (TX) and one GND wire.
+You can connect all ESCs to a single serial port using only a single signal wire from the autopilot's UART TX pin to the ESC's TLM pin and one GND wire.
 If you are using 4in1 ESCs you can connect up-to 3 of them in this fashion.
 
 Configuring
