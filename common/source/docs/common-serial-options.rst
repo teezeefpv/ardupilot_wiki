@@ -283,6 +283,16 @@ LTM Telemetry, see :ref:`LTM Telemetry <common-ltm-telemetry>`
 
    </td>
    </tr>
+      <tr>
+   <td>37</td>
+   <td>
+
+OneWire serial ESC, see :ref:`FETtec OneWire <common-fettec-onewire>` 
+
+.. raw:: html
+
+   </td>
+   </tr>
    </tbody>
    </table>
 
