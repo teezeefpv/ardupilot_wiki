@@ -1,9 +1,8 @@
+==============
 FETtec OneWire
 ==============
 
 This is a half duplex serial protocol with a 2Mbit/s Baudrate created by Felix Niessen (former Flyduino KISS developer) from `FETtec <https://fettec.net/>`.
-For example, you can connect a 4in1 ESC with only 1 signal wire and 1 GND wire to your flight controller.
-The OneWire protocol is limited to 24 ESCs per OneWire bus.
 You can change many more settings of the ESC over OneWire than over DShot.
 It also has a better cyclic redundancy check (CRC) than Dshot offers.
 CRC checks if there are any signal errors that occur in the communication between autopilot and ESC; and between ESC and autopilot.
@@ -28,6 +27,8 @@ The protocol supports up-to 25 ESCs, but the ArduPilot implementation of it limi
 You can connect all ESCs to a single serial port using only a single signal wire from the autopilot's UART TX pin to the ESC's TLM pin and one GND wire.
 If you are using 4in1 ESCs you can connect up-to 3 of them in this fashion.
 
+TODO: add a figure here.
+
 Configuring
 ===========
 
@@ -46,4 +47,4 @@ SERVO_FTW_MASK = 15
 Buying
 ======
 
-Multiple ESCs are available at (backtick) FETtec <https://fettec.net>(backtick)( underscore)
+Multiple ESCs are available at `FETtec <https://fettec.net>`_
