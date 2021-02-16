@@ -32,17 +32,23 @@ TODO: add a figure here.
 Configuring
 ===========
 
-To configure it you need to set the SERIALx_PROTOCOL parameter to FETtec_OneWire (37) and SERIALx_OPTIONS parameter to HalfDuplex (4), where x is the number of the serial port you are using.
+To configure it you need to set the :ref:`SERIALx_PROTOCOL common-serial-options.html#serialx-protocol`_ parameter to `FETtec_OneWire` (37) and :ref:`SERIALx_OPTIONS common-serial-options.html#serialx-options` parameter to `HalfDuplex` (4), where x is the number of the serial port you are using.
 
-For example:
+For example, a serial 2 connection would need:
+
+```
 SERIAL2_PROTOCOL = 37
 SERIAL2_OPTIONS = 4
+```
 
-Then you need to reboot the autopilot. After that you must set the channels you want to use in the SERVO_FTW_MASK parameter
-, and again restart your autopilot.
+Then you need to reboot the autopilot.
+After that you must set the channels you want to use in the SERVO_FTW_MASK parameter, and again restart your autopilot.
 
-For example, a quadcopter using the first four motors would need
+For example, a quadcopter using the first four motors would need:
+
+```
 SERVO_FTW_MASK = 15
+```
 
 Buying
 ======
