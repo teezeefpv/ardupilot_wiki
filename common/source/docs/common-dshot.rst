@@ -1,14 +1,14 @@
 .. _common-dshot:
 
-=========================
-ESC Related Configuration
-=========================
+================================================
+Conventional Brushless ESC Related Configuration
+================================================
 
 
 ESC Protocol
 ============
 
-Ardupilot supports several communication protocols with brushless motor ESCs:
+Ardupilot supports several communication protocols with brushless motor ESCs connected on the autopilots SERVO/MOTOR output pins:
 
 - Normal (standard PWM 1000uS - 2000uS pulse widths)
 - Oneshot

@@ -11,16 +11,17 @@ ArduPilot supports a wide variety of ESCs and motors.  The pages below provide s
 .. toctree::
     :maxdepth: 1
 
-    Brushless ESC Related Configuration <common-dshot>
+    Conventional Brushless ESC Related Configuration <common-dshot>
 [site wiki="copter,rover"]
     Brushed motors <common-brushed-motors>
 [/site]
 [site wiki="copter"]
     Booster motor <booster-motor>
 [/site]
-    Brushless ESCs <common-brushless-escs>
+    Conventional Brushless ESCs <common-brushless-escs>
     ICE (Internal Combustion Engines) <common-ice>
     KDE CAN ESCs <common-kde-can-escs>
+    Serial ESCs <common-serial-escs>
 [site wiki="rover"]
     Thrusters (for boats) <thrusters>
 [/site]
