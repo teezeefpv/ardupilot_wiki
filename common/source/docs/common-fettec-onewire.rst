@@ -46,4 +46,4 @@ SERVO_FTW_MASK = 15
 Buying
 ======
 
-Multiple ESCs are available at <https://fettec.net>
+Multiple ESCs are available at (backtick) FETtec <https://fettec.net>(backtick)( underscore)
