@@ -8,30 +8,34 @@ You can change way more settings of the ESC over OneWire than over DShot.
 It also has a better cyclic redundancy check (CRC) than Dshot offers.
 CRC checks if there are any signal errors that occur in the communication between autopilot and ESC; and between ESC and autopilot.
 It supports ESC telemetry, so information from the ESC status can be sent back to the autopilot:
-* Motor rotations per minute (RPM)
-* Input voltage (V)
-* Current draw (A)
-* Temperature (°C)
+
+- Motor rotations per minute (RPM)
+- Input voltage (V)
+- Current draw (A)
+- Power consumption (W)
+- Temperature (°C)
 
 This information allows the autopilot to:
-* dynamicaly change the center frequency of the notch filters used to reduce frame vibration noise in the gyros
-* log the status of each ESC to the SDCard or internal Flash, for post flight analysis
-* send the status of each ESC to the Ground Station or companion computer for real-time monitoring
+
+- dynamicaly change the center frequency of the notch filters used to reduce frame vibration noise in the gyros
+- log the status of each ESC to the SDCard or internal Flash, for post flight analysis
+- send the status of each ESC to the Ground Station or companion computer for real-time monitoring
 
 Connecting
 ==========
 
-The protocol support up-to 25 ESCs, but the ArduPilot implementation of it limits this to 12.
-You can connect all ESCs to a single serial port using only a single signal wire and one GND wire.
+The protocol supports up-to 25 ESCs, but the ArduPilot implementation of it limits this to 12.
+You can connect all ESCs to a single serial port using only a single signal wire (TX) and one GND wire.
 If you are using 4in1 ESCs you can connect up-to 3 of them in this fashion.
 
 Configuring
 ===========
 
-To configure it you need to set the SERIALX_PROTOCOL parameter to FETtec_OneWire (37), where X is the number of the serial port you are using.
+To configure it you need to set the SERIALx_PROTOCOL parameter to FETtec_OneWire (37) and SERIALx_OPTIONS parameter to HalfDuplex (4), where x is the number of the serial port you are using.
 
 For example:
 SERIAL2_PROTOCOL = 37
+SERIAL2_OPTIONS = 4
 
 Then you need to reboot the autopilot. After that you must set the channels you want to use in the SERVO_FTW_MASK parameter
 , and again restart your autopilot.
