@@ -32,7 +32,7 @@ TODO: add a figure here.
 Configuring
 ===========
 
-To configure it you need to set the :ref:`SERIALx_PROTOCOL common-serial-options.html#serialx-protocol`_ parameter to `FETtec_OneWire` (37) and :ref:`SERIALx_OPTIONS common-serial-options.html#serialx-options` parameter to `HalfDuplex` (4), where x is the number of the serial port you are using.
+To configure it you need to set the :ref:`SERIALx_PROTOCOL common-serial-options.html#serialx-protocol`_ parameter to `FETtec_OneWire` (37) and :ref:`SERIALx_OPTIONS common-serial-options.html#serialx-options-parameter` parameter to `HalfDuplex` (4), where x is the number of the serial port you are using.
 
 For example, a serial 2 connection would need:
 
