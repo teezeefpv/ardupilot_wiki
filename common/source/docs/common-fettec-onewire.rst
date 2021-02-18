@@ -2,7 +2,7 @@
 FETtec OneWire
 ==============
 
-This is a half duplex serial protocol with a 2Mbit/s Baudrate created by Felix Niessen (former Flyduino KISS developer) from `FETtec <https://fettec.net/>`.
+This is a half duplex serial protocol with a 2Mbit/s Baudrate created by Felix Niessen (former Flyduino KISS developer) from `FETtec <https://fettec.net/>`_.
 You can change many more settings of the ESC over OneWire than over DShot.
 It also has a better cyclic redundancy check (CRC) than Dshot offers.
 CRC checks if there are any signal errors that occur in the communication between autopilot and ESC; and between ESC and autopilot.
@@ -32,7 +32,7 @@ TODO: add a figure here.
 Configuring
 ===========
 
-To configure it you need to set the :ref:`SERIALx_PROTOCOL common-serial-options.html#serialx-protocol`_ parameter to `FETtec_OneWire` (38) and :ref:`SERIALx_OPTIONS common-serial-options.html#serialx-options-parameter` parameter to `HalfDuplex` (4), where x is the number of the serial port you are using.
+To configure it you need to set the :ref:`SERIALx_PROTOCOL common-serial-options.html#serialx-protocol`_ parameter to `FETtec_OneWire` (38) and :ref:`SERIALx_OPTIONS common-serial-options.html#serialx-options-parameter`_ parameter to `HalfDuplex` (4), where x is the number of the serial port you are using.
 
 For example, a serial 2 connection would need:
 
