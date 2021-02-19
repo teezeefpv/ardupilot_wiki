@@ -37,7 +37,7 @@ To configure it you need to set the :ref:`SERIALx_PROTOCOL <common-serial-option
 For example, a serial 2 connection would need:
 
 ```
-SERIAL2_PROTOCOL = 37
+SERIAL2_PROTOCOL = 38
 SERIAL2_OPTIONS = 4
 ```
 
