@@ -48,6 +48,13 @@ For example, a quadcopter using the first four motors would need:
 
 ```
 SERVO_FTW_MASK = 15
+
+
+To get RPM from the telemetry you need to set the motor pole count e.g.:
+SERVO_FTW_POLES = 14
+
+
+
 ```
 
 Buying
